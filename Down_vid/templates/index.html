@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Down-Vid | Home</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/static/fonts/font-awesome/css/all.css">
+    <link rel="stylesheet" href="/static/content/style.css">
+    <script src="/static/scripts/jquery-3.6.0.min.js"></script>
+    <script defer src="/static/scripts/script.js"></script>
+</head>
+<body>
+
+    <article>
+
+        <!-- Section -->
+
+        <section>
+            <div class="contain first">
+
+                <!-- Top -->
+
+                <div class="top">
+                    <div class="logo">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                    <div class="title">
+                        <p>Down-Vid</p>
+                    </div>
+                </div>
+
+                <!-- Headin -->
+
+                <div class="headin">
+                    <div class="headin-content">
+                        <div class="headin-name">
+                            <p>Download <span>YouTube</span> Videos Instantly</p>
+                        </div>
+                        <div class="headin-subname">
+                            <p>Save your favorite YouTube videos in high quality - fast, free, and easy. Just paste the link and start downloading!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Search -->
+
+                <div class="search">
+                    <div class="search-box">
+                        <div class="search-content">
+                            <i class="fa-solid fa-link"></i>
+                            <input type="url" name="url" id="url" placeholder="Paste youtube link here" onkeydown="_submit()">
+                        </div>
+                        <div class="search-button" id="search-button">
+                            <button onclick="_submit()">
+                                <div class="load">
+                                    <i class="fa-solid fa-spin fa-spinner"></i>
+                                </div>
+                                <div class="default">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Error -->
+
+                <div class="error" id="error">
+                    <div class="error-content">
+                        <div class="error-icon">
+                            <i></i>
+                        </div>
+                        <div class="error-name">
+                            <p>Oops! Invalid link</p>
+                        </div>
+                        <div class="error-subname">
+                            <p>The link you paste is invalid. Try again or use another link</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Data -->
+
+        <section>
+            <div class="data" id="data">
+
+                <!-- Data : Image -->
+
+                <div class="data-image" id="image-color">
+                    <img src="" alt="Thumbnail" id="thumbnail">
+                </div>
+
+                <!-- Data : All -->
+
+                <div class="data-all">
+                    <div class="data-contain">
+
+                        <!-- Data : Headin -->
+
+                        <div class="data-headin">
+                            <div class="data-name">
+                                <p>Download list</p>
+                            </div>
+                            <div class="data-title" id="title">
+                                <p>Title of the Video</p>
+                            </div>
+                        </div>
+
+                        <!-- Data : Box -->
+
+                        <div class="data-content">
+
+                            <!-- Table -->
+
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Quality</th>
+                                        <th>Size</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="content">
+                                    <tr>
+                                        <td>Video</td>
+                                        <td>720p</td>
+                                        <td>200 Mb</td>
+                                        <td>
+                                            <div class="button">
+                                                <button>
+                                                    <i class="fa-solid fa-spinner"></i>
+                                                    <p>Download</p>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Video</td>
+                                        <td>1080p</td>
+                                        <td>400 Mb</td>
+                                        <td>
+                                            <div class="button">
+                                                <button>
+                                                    <i class="fa-solid fa-spinner"></i>
+                                                    <p>Download</p>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Audio</td>
+                                        <td>144kbz</td>
+                                        <td>10 Mb</td>
+                                        <td>
+                                            <div class="button">
+                                                <button>
+                                                    <i class="fa-solid fa-spinner"></i>
+                                                    <p>Download</p>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </article>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="footer">
+            <p>&copy; {{ year }} Down-Vid. All right reserved. Enjoy our service.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
