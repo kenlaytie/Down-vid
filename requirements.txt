@@ -1,9 +1,6 @@
 Flask>=2.2.3
-datetime
 requests
 yt_dlp
-io
-PIL
-collections
-urllib.parse
 gunicorn
+Pillow
+
