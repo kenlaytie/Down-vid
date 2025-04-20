@@ -4,9 +4,6 @@ from flask import render_template, request, jsonify, Response, stream_with_conte
 from Down_vid import app
 from Down_vid.controllers.process_controller import process_controller
 import requests
-import os
-import uuid
-import yt_dlp
 from urllib.parse import quote
 
 @app.route('/')

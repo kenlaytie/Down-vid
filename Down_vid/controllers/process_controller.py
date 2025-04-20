@@ -1,7 +1,6 @@
 ﻿from flask import jsonify
 import requests
 import yt_dlp  # ✅ Corrected this
-import traceback  # ✅ Added this
 from io import BytesIO
 from PIL import Image
 from collections import Counter
@@ -87,6 +86,5 @@ class process_controller:
             })
 
         except Exception as e:
-            traceback.print_exc()
             return jsonify({"exists": False, "error": f"Error: {str(e)}"}), 400
 
